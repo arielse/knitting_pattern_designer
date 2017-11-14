@@ -1,0 +1,14 @@
+<section id="login-form">
+  <h2>Log In</h2>
+  <% if @errors %>
+  <p><%= @errors %></p>
+  <% end %>
+  <%= form_for(:session, url: login_path) do |f| %>
+  <label for="username">Username</label>
+  <input type="text" name="username" value="" placeholder="username...">
+  <label for="password">Password</label>
+  <input type="password" name="password" value="" placeholder="password...">
+
+  <button type="submit" class="login-btn">Login</button>
+  <% end %>
+</section>
