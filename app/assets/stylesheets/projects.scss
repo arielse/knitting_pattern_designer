@@ -1,3 +1,72 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  text-align: center;
+  background-color: aliceblue;
+}
+h1, button {
+  font-family: arial, sans-serif;
+}
+
+#pattern-chart, #lace-pattern-chart {
+  height: 563px;
+  width: 800px;
+  border: 1px solid #333;
+  margin: auto;
+  background-color: #fff;
+}
+
+
+div {
+  padding: 5px 5px 5px 0;
+}
+
+span {
+  padding: 5px 15px;
+  border: 1px solid #333;
+}
+#lace-pattern-chart {
+  height: 583px;
+}
+#lace-pattern-chart span {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  padding: 4px 14px;
+  font-size: 20px;
+}
+#lace-pattern-chart div {
+  padding: 4px 4px 4px 0;
+}
+
+span.purl {
+  background-image: url(images/dot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: rgba(0, 0, 0, 0);
+}
+span.knit {
+  color: rgba(0, 0, 0, 0);
+}
+
+.done {
+  background-color: #3aa0da;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: #3aa0da;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

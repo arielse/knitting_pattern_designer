@@ -5,12 +5,10 @@
 
 <h2>Pattern</h2>
 <% @pattern_rows.each do |row_arr| %>
-  <div class="pattern-row">
+  <div class="pattern-row <%= row_arr.id %>">
     <% row_arr.row.each do |stitch| %>
-      <span class="<%= stitch %>"></span>
+      <span class="<%= stitch %>"><%= stitch %></span>
     <% end %>
   </div>
 
 <% end %>
-
-<a href="<%= @pattern.id %>/edit">Edit</a>

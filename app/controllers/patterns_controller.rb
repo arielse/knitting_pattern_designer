@@ -20,4 +20,9 @@ class PatternsController < ApplicationController
     @pattern = Pattern.find(params[:id])
     @pattern_rows = assemble_rows
   end
+
+  def edit
+    @pattern = Pattern.find(params[:id])
+    @pattern_rows = assemble_rows
+  end
 end
