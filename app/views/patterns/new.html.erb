@@ -1,0 +1,13 @@
+<h1>New Pattern</h1>
+
+<% if logged_in? %>
+  <%= form_tag('/patterns', method: :post) do%>
+    <label for="name">Pattern Name</label>
+    <input type="text" name="name" value="" placeholder="Enter pattern name...">
+    <label for="description">Pattern Description</label>
+    <textarea name="description" rows="8" cols="80" placeholder="Enter pattern desciption here..."></textarea>
+    <button type="submit">Submit</button>
+  <% end %>
+<% else %>
+  <p>You must be logged in to create a pattern</p>
+<% end %>

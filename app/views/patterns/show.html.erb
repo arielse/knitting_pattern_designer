@@ -1,0 +1,11 @@
+<h1><%= @pattern.name %></h1>
+
+<h2>Description</h2>
+<p><%= @pattern.description %></p>
+
+<h2>Pattern</h2>
+<% @pattern_rows.each do |row_arr| %>
+ <% row_arr.row.each do |stitch| %>
+   <span class="<%= stitch %>"></span>
+ <% end %>
+<% end %>

@@ -10,14 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171113233348) do
+ActiveRecord::Schema.define(version: 20171114230604) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "pattern_rows", force: :cascade do |t|
+    t.integer "pattern_id"
+    t.text "row", default: [], array: true
+    t.boolean "row_complete", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "patterns", force: :cascade do |t|
     t.integer "user_id"
-    t.text "pattern", default: [], array: true
     t.string "name"
     t.text "description"
     t.text "status"

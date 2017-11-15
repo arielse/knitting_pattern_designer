@@ -1,4 +1,7 @@
 <h1>Sign Up</h1>
+<% if @errors %>
+  <p><%= @errors %></p>
+  <% end %>
 <%= form_tag('/users', method: :post) do%>
   <label for="username">Username:</label>
   <input type="text" name="username" value="">
