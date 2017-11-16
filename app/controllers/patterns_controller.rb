@@ -26,12 +26,12 @@ class PatternsController < ApplicationController
 
   def show
     @pattern = Pattern.find(params[:id])
-    @pattern_rows = assemble_rows
+    @pattern_rows = @pattern.pattern_rows
   end
 
   def edit
     @pattern = Pattern.find(params[:id])
-    @pattern_rows = assemble_rows
+    @pattern_rows = @pattern.pattern_rows
     @rows_arr = []
     @pattern_rows.each do |row_arr|
        @rows_arr.push(row_arr.row)

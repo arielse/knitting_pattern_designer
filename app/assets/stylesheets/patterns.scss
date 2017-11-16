@@ -15,12 +15,17 @@ h1, button {
 }
 
 div {
-  padding: 5px 5px 5px 0;
+  
 }
 
 span, select, #stitch-keys p {
   padding: 5px 15px;
   border: 1px solid #333;
+  font-family: 'inconsolata', monospace;
+  display: inline-block;
+  width: 40px;
+  height: 29px;
+  vertical-align: bottom;
 }
 
 

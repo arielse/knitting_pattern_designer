@@ -1,6 +1,8 @@
-class Api::PatternRowsController < ApplicationController
+class Api::PatternsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def update
-    @pattern_rows = PatternRow.where(:pattern_id => pattern.id).order('id DESC')
+    @pattern_rows = PatternRow.where(:pattern_id => params[:pattern_id]).order('id DESC')
     updated_grid = JSON.parse(params[:rows])
 
     for i in 0..9

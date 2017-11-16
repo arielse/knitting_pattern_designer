@@ -4637,3 +4637,1110 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 18:19:04 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.2ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (1.0ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 143ms (Views: 115.9ms | ActiveRecord: 2.6ms)
+
+
+Started PUT "/api/pattern_rows" for 127.0.0.1 at 2017-11-16 18:19:09 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/pattern_rows"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 18:21:03 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.1ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 110ms (Views: 48.8ms | ActiveRecord: 18.4ms)
+
+
+Started PUT "/api/patterns" for 127.0.0.1 at 2017-11-16 18:21:07 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/patterns"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 18:22:25 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.9ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 47.6ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/api/patterns" for 127.0.0.1 at 2017-11-16 18:22:29 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/patterns"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:04:29 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 158ms (Views: 79.9ms | ActiveRecord: 16.5ms)
+
+
+Started PUT "/api/patterns" for 127.0.0.1 at 2017-11-16 21:04:37 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/patterns"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:05:58 +1100
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (1.2ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 457ms (Views: 394.2ms | ActiveRecord: 15.1ms)
+
+
+Started PUT "/api/patterns" for 127.0.0.1 at 2017-11-16 21:06:01 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/patterns"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/api/patterns" for 127.0.0.1 at 2017-11-16 21:08:46 +1100
+  
+ActionController::RoutingError (No route matches [PUT] "/api/patterns"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:09:58 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.8ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 108ms (Views: 42.3ms | ActiveRecord: 20.2ms)
+
+
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:10:00 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:15:22 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"p\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:20:30 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"p\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `pattern' for #<Api::PatternsController:0x007faaab74bd70>
+Did you mean?  pattern_row):
+  
+app/controllers/api/patterns_controller.rb:5:in `update'
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:21:30 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"p\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+  [1m[36mPatternRow Load (0.9ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  [1m[36mPatternRow Load (0.3ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (33.8ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,p,p,\"\",\"\",\"\",\"\",\"\",\"\",p}"], ["updated_at", "2017-11-16 10:21:30.405118"], ["id", 18]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,\"\",p,\"\",\"\",\"\",\"\",\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.449782"], ["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.462000"], ["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.3ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.2ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",p,\"\",\"\",\"\",\"\",\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.467293"], ["id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.2ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",\"\",\"\",p,\"\",\"\",\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.476289"], ["id", 12]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.2ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.2ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.2ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",\"\",\"\",\"\",\"\",p,\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.484673"], ["id", 10]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.3ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.2ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",p,\"\",\"\",\"\",\"\",\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:21:30.491520"], ["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::PatternsController#update, rendering head :no_content
+Completed 204 No Content in 210ms (ActiveRecord: 68.5ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:21:30 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (1.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 62ms (Views: 50.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:22:10 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:22:11 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 82ms (Views: 76.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPattern Load (0.7ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPattern Load (0.7ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1[0m  [["pattern_id", 9]]
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:27:44 +1100
+  
+ActionController::RoutingError (Couldn't find PatternRowsHelper, expected it to be defined in helpers/pattern_rows_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/patterns_controller.rb:1:in `<top (required)>'
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:28:06 +1100
+  
+ActionController::RoutingError (uninitialized constant ApplicationController::PatternRowsHelper):
+  
+app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/patterns_controller.rb:1:in `<top (required)>'
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:28:19 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 108ms (Views: 43.5ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:29:11 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 67ms (Views: 53.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:29:16 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (1.0ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 37.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:29:54 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 37.1ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:30:01 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"p\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"/\",\"/\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"/\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",\"\",\"\",\"\",/,/,\"\",\"\",\"\"}"], ["updated_at", "2017-11-16 10:30:01.732766"], ["id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,\"\",\"\",\"\",\"\",\"\",\"\",/,\"\",\"\"}"], ["updated_at", "2017-11-16 10:30:01.739780"], ["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::PatternsController#update, rendering head :no_content
+Completed 204 No Content in 111ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:30:01 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 42ms (Views: 36.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:30:05 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 34.3ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:30:19 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"o\",\"\",\"o\",\"o\",\"\",\"\",\"p\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"/\",\"/\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"/\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,p,p,o,\"\",o,o,\"\",\"\",p}"], ["updated_at", "2017-11-16 10:30:19.157997"], ["id", 18]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.1ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::PatternsController#update, rendering head :no_content
+Completed 204 No Content in 116ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:30:19 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:30:32 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 58ms (Views: 47.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:31:08 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 57.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:31:50 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 39.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:32:06 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"o\",\"\",\"o\",\"o\",\"\",\"\",\"/\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"/\",\"/\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"/\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{p,p,p,o,\"\",o,o,\"\",\"\",/}"], ["updated_at", "2017-11-16 10:32:06.549970"], ["id", 18]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::PatternsController#update, rendering head :no_content
+Completed 204 No Content in 108ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:32:06 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:32:19 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 46ms (Views: 35.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:38:03 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.9ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 191ms (Views: 152.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:38:31 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (1.0ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 82ms (Views: 72.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:38:58 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.8ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.9ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 87.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:40:16 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 83ms (Views: 76.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:41:13 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:44:22 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.8ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 56ms (Views: 45.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:44:39 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (1.0ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 34.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:44:46 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 57ms (Views: 49.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:48:10 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 85ms (Views: 78.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:49:21 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (1.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.9ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 52.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/patterns/9/edit" for 127.0.0.1 at 2017-11-16 21:50:27 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 68ms (Views: 58.7ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/api/patterns/9" for 127.0.0.1 at 2017-11-16 21:50:47 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"9", "rows"=>"[[\"p\",\"p\",\"p\",\"o\",\"\",\"o\",\"o\",\"\",\"\",\"/\"],[\"p\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"/\",\"/\",\"\",\"\",\"\"],[\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"/\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"/\",\"o\"],[\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"p\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"p\",\"\",\"\",\"\"],[\"\",\"\",\"p\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]", "id"=>"9"}
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (2.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",/,o}"], ["updated_at", "2017-11-16 10:50:47.293804"], ["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.4ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pattern_rows" SET "row" = $1, "updated_at" = $2 WHERE "pattern_rows"."id" = $3[0m  [["row", "{\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",p}"], ["updated_at", "2017-11-16 10:50:47.308453"], ["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT  "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."id" = $1 ORDER BY id DESC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE Pattern Load (0.0ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for Api::PatternsController#update, rendering head :no_content
+Completed 204 No Content in 114ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:50:47 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:51:21 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:51:27 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 36ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:51:30 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:51:47 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:53:17 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 21:53:19 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Ariel/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Ariel/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 21:53:19 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Ariel/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Ariel/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 21:54:55 +1100
+Processing by PatternsController#index as HTML
+  Rendering patterns/index.html.erb within layouts/application
+  [1m[36mPattern Load (0.4ms)[0m  [1m[34mSELECT "patterns".* FROM "patterns"[0m
+  Rendered patterns/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 77ms (Views: 58.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/patterns/6" for 127.0.0.1 at 2017-11-16 21:55:00 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 6]]
+  Rendered patterns/show.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 115ms (Views: 85.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/patterns/7" for 127.0.0.1 at 2017-11-16 21:55:03 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPattern Load (0.7ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 7]]
+  Rendered patterns/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 41ms (Views: 35.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/patterns/8" for 127.0.0.1 at 2017-11-16 21:55:05 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 8]]
+  Rendered patterns/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 49ms (Views: 43.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/patterns/9" for 127.0.0.1 at 2017-11-16 21:55:06 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPattern Load (0.6ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (1.6ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 9]]
+  Rendered patterns/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 56ms (Views: 48.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/patterns/2" for 127.0.0.1 at 2017-11-16 21:55:10 +1100
+Processing by PatternsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPattern Load (1.3ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering patterns/show.html.erb within layouts/application
+  [1m[36mPatternRow Load (0.7ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 2]]
+  Rendered patterns/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 41ms (Views: 33.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/patterns/2/edit" for 127.0.0.1 at 2017-11-16 21:55:12 +1100
+Processing by PatternsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPattern Load (0.5ms)[0m  [1m[34mSELECT  "patterns".* FROM "patterns" WHERE "patterns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPatternRow Load (0.8ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 2]]
+  Rendering patterns/edit.html.erb within layouts/application
+  Rendered patterns/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 36.0ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/api/patterns/2" for 127.0.0.1 at 2017-11-16 21:55:13 +1100
+Processing by Api::PatternsController#update as */*
+  Parameters: {"pattern_id"=>"2", "rows"=>"[]", "id"=>"2"}
+  [1m[36mPatternRow Load (0.5ms)[0m  [1m[34mSELECT "pattern_rows".* FROM "pattern_rows" WHERE "pattern_rows"."pattern_id" = $1 ORDER BY id DESC[0m  [["pattern_id", 2]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/api/patterns_controller.rb:9:in `block in update'
+app/controllers/api/patterns_controller.rb:8:in `update'

@@ -6,11 +6,7 @@
 <h2>Pattern</h2>
 <section id="pattern-chart">
   <% @pattern_rows.each do |row_arr| %>
-    <div class="pattern-row <%= row_arr.id %>">
-      <% row_arr.row.each do |stitch| %>
-        <span class="<%= stitch %>"></span>
-      <% end %>
-    </div>
+    <div class="pattern-row <%= row_arr.id %>"><% row_arr.row.each do |stitch| %><span class="<%= stitch %>"><%=stitch%></span><% end %></div>
 
   <% end %>
 
@@ -27,7 +23,6 @@
 <button type="button" class="save-btn">Save Changes</button>
 
 <script type="text/javascript">
-var token = $('meta[name="csrf-token"]').attr('content');
 
 var $patternChart = $('#pattern-chart');
 var $stitchKeys = $('#stitch-keys');
@@ -37,14 +32,12 @@ var patternGrid = <%=raw @rows_arr%>;
 
 $($stitchKeys).on('click', 'p', function(event) {
   currentStitch = $(event.target).text();
+  $('p').removeClass('done');
   $(event.target).addClass('done');
 });
 
 var stitchValueCheck = function() {
-  if (event.target.textContent !== "") {
-  } else {
     event.target.textContent = currentStitch;
-  }
 };
 
 var setTileValue = function(patternGrid) {
@@ -68,7 +61,7 @@ $($patternChart).on('click', 'span', function(event) {
 
 $('.save-btn').on('click', function(event) {
   var patternSave = {
-    url: '/api/pattern_rows',
+    url: '/api/patterns/<%= @pattern.id %>',
     method: 'put',
 
     data: {

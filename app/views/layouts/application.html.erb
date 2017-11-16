@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>KnittingPatternDesigner</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,13 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/patterns">Patterns</a>
+        <a href="/users">Users</a>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
