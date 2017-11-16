@@ -1,3 +1,52 @@
 // Place all the styles related to the patterns controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  text-align: center;
+  background-color: aliceblue;
+}
+h1, button {
+  font-family: arial, sans-serif;
+}
+
+div {
+  padding: 5px 5px 5px 0;
+}
+
+span, select, #stitch-keys p {
+  padding: 5px 15px;
+  border: 1px solid #333;
+}
+
+
+.done {
+  background-color: #3aa0da;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: #3aa0da;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+section {
+  &#stitch-keys {
+    display: inline-block;
+    width: 15%;
+  }
+  &#pattern-chart {
+    display: inline-block;
+    width: 74%;
+  }
+
+}

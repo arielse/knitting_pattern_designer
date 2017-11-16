@@ -4,11 +4,82 @@
 <p><%= @pattern.description %></p>
 
 <h2>Pattern</h2>
-<% @pattern_rows.each do |row_arr| %>
-  <div class="pattern-row <%= row_arr.id %>">
-    <% row_arr.row.each do |stitch| %>
-      <span class="<%= stitch %>"><%= stitch %></span>
-    <% end %>
-  </div>
+<section id="pattern-chart">
+  <% @pattern_rows.each do |row_arr| %>
+    <div class="pattern-row <%= row_arr.id %>">
+      <% row_arr.row.each do |stitch| %>
+        <span class="<%= stitch %>"></span>
+      <% end %>
+    </div>
 
-<% end %>
+  <% end %>
+
+</section>
+
+<section id="stitch-keys">
+  <p>p</p>
+  <p>o</p>
+  <p>/</p>
+  <p>\</p>
+
+</section>
+
+<button type="button" class="save-btn">Save Changes</button>
+
+<script type="text/javascript">
+var token = $('meta[name="csrf-token"]').attr('content');
+
+var $patternChart = $('#pattern-chart');
+var $stitchKeys = $('#stitch-keys');
+var currentStitch = '';
+var $span = $('span');
+var patternGrid = <%=raw @rows_arr%>;
+
+$($stitchKeys).on('click', 'p', function(event) {
+  currentStitch = $(event.target).text();
+  $(event.target).addClass('done');
+});
+
+var stitchValueCheck = function() {
+  if (event.target.textContent !== "") {
+  } else {
+    event.target.textContent = currentStitch;
+  }
+};
+
+var setTileValue = function(patternGrid) {
+  // var newGrid = patternGrid;
+  var divs = $patternChart.find('div');
+  for (var i = 0; i < patternGrid.length; i++) {
+    var row = divs[i];
+    for (var j = 0; j < patternGrid[i].length; j++) {
+      var stitches = $(row).find('span');
+      patternGrid[i][j]= stitches[j].textContent;
+    }
+  }
+  return patternGrid;
+};
+
+
+$($patternChart).on('click', 'span', function(event) {
+ stitchValueCheck();
+ patternGrid = setTileValue(patternGrid);
+})
+
+$('.save-btn').on('click', function(event) {
+  var patternSave = {
+    url: '/api/pattern_rows',
+    method: 'put',
+
+    data: {
+      pattern_id: <%= @pattern.id %>, rows: JSON.stringify(patternGrid)
+    }
+  }
+  var redirect = function(response) {
+    window.location.href = '/patterns/<%= @pattern.id %>'
+  }
+  $.ajax(patternSave).done(redirect)
+});
+
+
+</script>
