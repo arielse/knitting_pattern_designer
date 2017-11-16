@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @user = User.new
     @user.username = params[:username]
     @user.email = params[:email]
-    if User.find_by(username: username)
+    if User.find_by(username: params[:username])
       @errors = "Username already taken"
       render :new
     else

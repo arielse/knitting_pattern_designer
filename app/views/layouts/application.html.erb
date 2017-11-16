@@ -13,8 +13,14 @@
     <header>
       <nav>
         <a href="/">Home</a>
-        <a href="/patterns">Patterns</a>
+        <a href="/patterns/new">New Pattern</a>
         <a href="/users">Users</a>
+        <% if logged_in? %>
+        <%= link_to "Log Out", logout_path, method: :delete %>
+        <% else %>
+        <a href="/login">Login</a>
+        <a href="/users/new">Register</a>
+        <% end %>
       </nav>
     </header>
     <%= yield %>

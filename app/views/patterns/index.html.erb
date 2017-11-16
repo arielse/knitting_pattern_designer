@@ -1,5 +1,13 @@
 <h1>Patterns</h1>
 
-<% @patterns.each do |pattern| %>
-  <a href="patterns/<%= pattern.id %>"><h4><%= pattern.name %></h4></a>
-<% end %>
+
+  <% @patterns.each do |pattern| %>
+  <a href="patterns/<%= pattern.id %>">
+    <section id="pattern-index-card">
+      <% pattern.pattern_rows.each do |row_arr| %>
+        <div class="pattern-row"><% row_arr.row.each do |stitch| %><span class="<%= stitch %>"><%=stitch%></span><% end %></div>
+      <% end %>
+      <h2><%= pattern.name %></h2>
+    </section>
+  </a>
+  <% end %>

@@ -11,10 +11,3 @@
   <input type="password" name="password" value="">
   <button type="submit">Submit</button>
 <% end %>
-
-<%= form_for @user do |f| %>
-  Name: <%= f.text_field :username %><br />
-  Email : <%= f.text_field :email %><br />
-  Password : <%= f.password_field :password %><br />
-  <%= f.submit %>
-<% end %>

@@ -2,23 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-  box-sizing: border-box;
-  outline: none;
-}
-body {
-  text-align: center;
-  background-color: aliceblue;
-}
-h1, button {
-  font-family: arial, sans-serif;
+#pattern-chart {
+  margin-bottom: 40px;
+  width: 400px;
+  margin: 40px auto;
+
 }
 
-div {
-  
-}
-
-span, select, #stitch-keys p {
+span, #stitch-keys p {
   padding: 5px 15px;
   border: 1px solid #333;
   font-family: 'inconsolata', monospace;
@@ -27,31 +18,36 @@ span, select, #stitch-keys p {
   height: 29px;
   vertical-align: bottom;
 }
+.pattern-description {
+  margin-bottom: 30px;
+}
+#pattern-index-card {
+  display: inline-block;
+  margin: 0 30px;
+  background-color: rgba(102, 185, 191, .3);
+  border: 3px solid #66b9bf;
+  border-radius: 10px;
+  padding: 20px;
+  span {
+    padding: 0 15px;
+    width: 30px;
+    height: 25px;
+    vertical-align: text-top;
+  }
 
+}
+.pattern-row {
+  background-color: #fff;
+}
 
+#stitch-keys {
+  margin-top: 40px;
+}
 .done {
   background-color: #3aa0da;
 }
 
-button {
-  margin-top: 30px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 25px;
-  background-color: #3aa0da;
-  color: #fff;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
 section {
-  &#stitch-keys {
-    display: inline-block;
-    width: 15%;
-  }
-  &#pattern-chart {
-    display: inline-block;
-    width: 74%;
-  }
+
 
 }

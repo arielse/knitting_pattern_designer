@@ -1,12 +1,10 @@
 <h1><%= @pattern.name %></h1>
 
-<h2>Description</h2>
-<p><%= @pattern.description %></p>
-
-<h2>Pattern</h2>
+<p class="pattern-description"><%= @pattern.description %></p>
+<section id="pattern-chart">
 <% @pattern_rows.each do |row_arr| %>
   <div class="pattern-row"><% row_arr.row.each do |stitch| %><span class="<%= stitch %>"><%=stitch%></span><% end %></div>
-
 <% end %>
+</section>
 
-<a href="<%= @pattern.id %>/edit">Edit</a>
+<a href="<%= @pattern.id %>/edit" class="button">Edit</a>
